@@ -11,5 +11,6 @@
   <div class="snapshot" *ngIf="webcamImage">
   <h2>Here is your image!</h2>
   <img [src]="webcamImage.imageAsDataUrl"/>
+  <a [href]="webcamImage.imageAsDataUrl" download><button>Download</button></a>
   </div>
   
